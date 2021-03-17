@@ -8,12 +8,12 @@ function Home() {
     <div>
       <Nav />
       <div className="Home-cards">
-        <SubjectCards />
-        <SubjectCards />
+        <SubjectCards subName={"MongoDB"} />
+        <SubjectCards subName={"Express"} />
       </div>
       <div className="Home-cards">
-        <SubjectCards />
-        <SubjectCards />
+        <SubjectCards subName={"React"} />
+        <SubjectCards subName={"Node"} />
       </div>
     </div>
   );

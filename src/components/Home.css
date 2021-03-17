@@ -1,5 +1,6 @@
 .Home-cards {
   display: flex;
   justify-content: space-evenly;
-  padding: 40px;
+  flex-wrap: wrap;
+  margin: 40px;
 }
