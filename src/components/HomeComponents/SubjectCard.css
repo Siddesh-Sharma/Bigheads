@@ -1,0 +1,9 @@
+.master-card {
+  height: 80px;
+  padding: 4rem;
+}
+
+.master-card-content {
+  display: flex;
+  justify-content: space-between;
+}

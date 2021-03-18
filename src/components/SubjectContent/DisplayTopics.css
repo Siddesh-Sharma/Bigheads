@@ -1,0 +1,9 @@
+.DisplayTopic__cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  margin: 3px;
+  justify-content: flex-start;
+
+  flex-shrink: 2;
+}

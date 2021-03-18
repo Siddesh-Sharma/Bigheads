@@ -4,3 +4,9 @@
   flex-wrap: wrap;
   margin: 40px;
 }
+
+.Home-title {
+  padding-top: 3.2rem;
+  display: flex;
+  justify-content: center;
+}
