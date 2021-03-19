@@ -2,11 +2,21 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 40px;
+  margin: 30px;
 }
 
 .Home-title {
-  padding-top: 3.2rem;
+  padding-top: 1rem;
   display: flex;
   justify-content: center;
+}
+
+.bread {
+  display: flex;
+  background-color: white;
+}
+
+.spacing {
+  padding: 5px;
+  margin: 0px 3px 0px 3px;
 }

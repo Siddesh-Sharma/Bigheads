@@ -3,11 +3,30 @@ import Nav from "../Nav";
 import SubjectCards from "./SubjectCards";
 import "./Home.css";
 import Footer from "../Footer";
+import Breadcrumb from "react-bootstrap/Breadcrumb";
 
-function Home() {
+function Home({ match }) {
+  let params = match.params;
+  console.log(params.slug);
   return (
     <div>
-      <Nav />
+      <div>
+        <Nav />
+      </div>
+      <div>
+        <Breadcrumb>
+          <Breadcrumb.Item>Home</Breadcrumb.Item>
+          <Breadcrumb.Item>:Sub</Breadcrumb.Item>
+          <Breadcrumb.Item>:Topic</Breadcrumb.Item>
+        </Breadcrumb>
+      </div>
+      {/* <div>
+        <Breadcrumb bsPrefix="bread">
+          <Breadcrumb.Item bsPrefix="spacing">home</Breadcrumb.Item>
+          <Breadcrumb.Item bsPrefix="spacing">topic</Breadcrumb.Item>
+          <Breadcrumb.Item bsPrefix="spacing">sub</Breadcrumb.Item>
+        </Breadcrumb>
+      </div> */}
       <div className="Home-title">
         <h2>Learn MERN</h2>
       </div>

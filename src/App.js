@@ -7,20 +7,33 @@ import firebase from "firebase";
 import db from "./Firebase";
 
 function App() {
-  db.ref("users/").set({
-    sub: {
-      react: "a",
-      mongo: "",
+  db.ref().set({
+    master: {
+      0: { SubName: "MongoDB", NoOfArticals: 0 },
+      1: { SubName: "Express", NoOfArticals: 0 },
+      2: {
+        SubName: "React",
+        NoOfArticals: 2,
+        topics: {
+          0: { name: "Intro", content: "ddhdvfudvfd" },
+          1: { name: "Class", content: "hdbfuhfvdf" },
+          2: { name: "Functions", content: "sbdbihwoh" },
+          3: { name: "routing", content: "mm;[ppmm" },
+        },
+      },
+      3: { SubName: "Node", NoOfArticals: 0 },
     },
   });
 
   return (
     <>
-      <Switch>
-        <Route path="/" component={Home} exact></Route>
-        <Route path="/topic" component={DisplayTopics}></Route>
-        <Redirect to="/"></Redirect>
-      </Switch>
+      <div className="Master">
+        <Switch>
+          <Route path="/" component={Home} exact></Route>
+          <Route path="/React" component={DisplayTopics}></Route>
+          {/* <Redirect to="/"></Redirect> */}
+        </Switch>
+      </div>
     </>
   );
 }
