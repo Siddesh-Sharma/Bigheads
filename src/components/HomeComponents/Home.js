@@ -5,9 +5,7 @@ import "./Home.css";
 import Footer from "../Footer";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 
-function Home({ match }) {
-  let params = match.params;
-  console.log(params.slug);
+function Home() {
   return (
     <div>
       <div>

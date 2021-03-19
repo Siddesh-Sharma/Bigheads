@@ -30,7 +30,7 @@ function App() {
       <div className="Master">
         <Switch>
           <Route path="/" component={Home} exact></Route>
-          <Route path="/React" component={DisplayTopics}></Route>
+          <Route path="/:subName" component={DisplayTopics}></Route>
           {/* <Redirect to="/"></Redirect> */}
         </Switch>
       </div>
