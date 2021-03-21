@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import "./TopicCards.css";
 
-function TopicCards({ topicName, topicNumber, subject }) {
+function TopicCards({ topicName, topicNumber, subject, state }) {
   return (
     <div className="TopicCards">
       <div className="TopicCards__cards">
