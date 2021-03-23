@@ -6,42 +6,17 @@ import animationData from "./lottie-arrow.json";
 import { useHistory, useParams } from "react-router-dom";
 import firebase from "firebase";
 import db from "../../Firebase";
-import userContext from "../../Context";
 
 // url = "loclahoash:300/react";
 // endpoint = react;
 
 function SubjectCards({ subName }) {
-  const [sub, setsub] = useState();
-
-  let topic = "abc";
-
-  const key = { MongoDB: 0, Express: 1, React: 2, Node: 3 };
-
-  // const params = useParams();
-  // console.log(params);
-  <userContext.Provider value={sub}></userContext.Provider>;
   const history = useHistory();
 
   let handleClick = (e) => {
-    setsub(e);
-    history.push(`${e}`);
-    //Get Request
-    // var ref = db.ref();
-    // ref
-    //   .child("master")
-    //   .child(key[topic])
-    //   .on(
-    //     "value",
-    //     function (snapshot) {
-    //       console.log(snapshot.val()); //overwrite context variable
-    //     },
-    //     function (error) {
-    //       console.log("Error: " + error.code);
-    //     }
-    //   );
+    console.log(e);
 
-    //console.log("topic is " + topic);
+    history.push(`${e}`);
   };
 
   const defaultOptions = {
@@ -65,7 +40,7 @@ function SubjectCards({ subName }) {
         >
           <Card.Body className="master-card-content">
             <Card.Title>{subName}</Card.Title>
-            {/* <Card.Text>Bright future</Card.Text> */}
+
             <Lottie options={defaultOptions} height={30} width={100} />
           </Card.Body>
         </Card>

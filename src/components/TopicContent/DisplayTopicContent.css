@@ -1,0 +1,14 @@
+.master-title > h1 {
+  height: 25px;
+  width: 100%;
+  margin: 40px;
+  font-size: 3rem;
+  padding: 2vh;
+}
+
+.master-para > p {
+  padding: 2vh;
+  font-size: 2rem;
+  font-weight: 100;
+  margin: 40px;
+}
