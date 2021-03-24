@@ -1,0 +1,13 @@
+.master-inline {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+.master-inline > h4 {
+  padding: 20px;
+}
+
+.master-inline > p {
+  margin-left: 80px;
+}

@@ -1,0 +1,17 @@
+.master {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px;
+  justify-content: space-between;
+}
+
+.master-child-1 {
+  flex-grow: 1;
+  margin: 20px;
+}
+
+.master-child-2 {
+  width: 30rem;
+
+  margin: 20px;
+}

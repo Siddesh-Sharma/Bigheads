@@ -41,7 +41,15 @@ export default function DisplayTopicContent({ match }) {
   }
 
   // function truncate(string, n) {
-  //   return string?.length > n ? string.substr(0, n - 1) + "..." : string;
+  //   if (string) {
+  //     if (string.length === 0) return;
+
+  //     return <p>{string.substr(0, n - 1)}</p>;
+  //     //console.log(string.substr(0, n - 1));
+  //   }
+  //   if (string && string.substr(n - 1) > 0) {
+  //     truncate(string.substr(n - 1), n);
+  //   }
   // }
 
   return (
