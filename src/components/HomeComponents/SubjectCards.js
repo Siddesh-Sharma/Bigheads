@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Card } from "react-bootstrap";
 import "./SubjectCard.css";
 import Lottie from "react-lottie";
 import animationData from "./lottie-arrow.json";
-import { useHistory, useParams } from "react-router-dom";
-import firebase from "firebase";
-import db from "../../Firebase";
+import { useHistory } from "react-router-dom";
 
 // url = "loclahoash:300/react";
 // endpoint = react;
@@ -14,8 +12,6 @@ function SubjectCards({ subName }) {
   const history = useHistory();
 
   let handleClick = (e) => {
-    console.log(e);
-
     history.push(`${e}`);
   };
 

@@ -12,11 +12,10 @@ export default function ProvideInput() {
   const [topicNumber, settopicNumber] = useState();
   const [topicName, settopicName] = useState();
   const [content, setcontent] = useState();
-  const [flag, setflag] = useState(false);
 
   //db varaiables
   const key = { MongoDB: 0, Express: 1, React: 2, Node: 3 };
-  const [temp, settemp] = useState();
+
   const [raw, setraw] = useState();
 
   const handleSubSubmit = (value) => {
@@ -53,7 +52,7 @@ export default function ProvideInput() {
       //console.log(snapshot.val().topics);
       if (raw) {
         raw.push({ name: topicName, content: content });
-        console.log("updated raw", raw);
+
         elon.set(raw, console.log("data uploading completed"));
       }
     });
