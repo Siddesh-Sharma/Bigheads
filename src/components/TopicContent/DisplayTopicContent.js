@@ -20,6 +20,7 @@ export default function DisplayTopicContent({ match }) {
   }, []);
 
   // //console.log(match.params.topicName);
+  //piece of art by Mayank
   if (content) {
     const matchTopic = match.params.topicName;
     var contentDisplay = null;
@@ -58,12 +59,12 @@ export default function DisplayTopicContent({ match }) {
         <Nav />
       </div>
 
-      <br />
       <div className="master-title">
         <h1>{match.params.topicName}</h1>
       </div>
-      <br />
       <div className="master-para">
+        <br />
+
         <p>{contentDisplay}</p>
       </div>
     </div>

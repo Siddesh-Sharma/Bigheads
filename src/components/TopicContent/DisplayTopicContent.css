@@ -1,14 +1,30 @@
-.master-title > h1 {
+.master-nav {
+}
+
+.master-title {
+  display: block;
   height: 25px;
   width: 100%;
   margin: 40px;
   font-size: 3rem;
-  padding: 2vh;
+  padding: 1vh;
 }
 
-.master-para > p {
-  padding: 2vh;
+.master-para {
+  padding: 1vh;
+
   font-size: 2rem;
   font-weight: 100;
   margin: 40px;
+}
+
+@media screen and (max-width: 320px) {
+  .master-para {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1204px) {
+  .master-para {
+    font-size: 2rem;
+  }
 }

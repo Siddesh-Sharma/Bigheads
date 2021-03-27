@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 
+/src/confidential.js
+
 /src/Firebase.js
 # testing
 /coverage
